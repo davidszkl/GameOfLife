@@ -6,7 +6,7 @@ all:
 $(NAME): all
 
 clean:
-	rm $(NAME)
+	rm -f $(NAME)
 
 re: clean all
 
