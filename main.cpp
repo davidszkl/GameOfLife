@@ -3,6 +3,7 @@
 #include <fstream>
 #include <signal.h>
 #include <random>
+#include <time.h>
 
 using namespace std;
 #define SIZE 100*40
@@ -26,6 +27,7 @@ void init_file(char **alive) {
 }
 
 void init_random(char **alive) {
+	srand(time(NULL));
 	std::string tmp2;
 	std::string tmp;
 	for (size_t n = 0; n < 40; n++)
